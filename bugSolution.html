@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // This script uses DOMContentLoaded to ensure the DOM is ready before manipulating it.
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("myDiv").style.display = "none";
+    });
+  </script>
+</body>
+</html>
